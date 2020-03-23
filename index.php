@@ -17,7 +17,7 @@
 	</header>
 
 	<div class="container_main">
-		<div class="container_add_item">
+		<div class="container_link">
 		<a href="./add_item.php">Add new cocktail</a>
 		</div>
 
@@ -34,7 +34,7 @@
 							</ul>
 					</div>
 					<div class="box1">
-							<h2>Mojito</h2>
+							<h2>Tequila Sunrise</h2>
 							<ul>
 								<li>Alcohol Base: Rum </li>
 								<li>Taste Profile: Refreshing</li>

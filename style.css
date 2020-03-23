@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 10px 0 20px 0;
 }
 
@@ -52,8 +52,8 @@ ul {
     margin-bottom: 50px; 
 }
 
-/* add item section container */
-.container_add_item {
+/* anchor tag section container */
+.container_link {
     height: 100px;
     width: 100%;
     text-align: center;
@@ -88,3 +88,11 @@ ul {
   overflow: auto;
 }
 
+
+/* in add item page, the container holding the form section */
+.form_container {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px; 
+    text-align: center;
+}
