@@ -66,7 +66,7 @@ ul {
     width: 80%;
   }
 
-  /* cocktails section */
+  /* home page - cocktails section */
 
 .cocktails_box {
     display: flex;
@@ -75,7 +75,6 @@ ul {
     margin: 10px 0 150px 0;
   }
   
-
 
 /* cocktails section- these 4 boxes sit next to each other */
 .box1 {
@@ -89,7 +88,7 @@ ul {
 }
 
 
-/* in add item page, the container holding the form section */
+/* add item page, the container holding the form section */
 .form_container {
     height: 400px;
     width: 100%;
