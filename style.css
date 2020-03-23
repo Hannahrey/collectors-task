@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+}
+
+
 h1, h2 {
     font-family: 'Mrs Sheppards', cursive;
     text-align: center;
@@ -66,7 +71,7 @@ ul {
 .cocktails_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 10px 0 150px 0;
   }
   
@@ -75,7 +80,7 @@ ul {
 /* cocktails section- these 4 boxes sit next to each other */
 .box1 {
   padding: 1%;
-  margin: 0 1%;
+  margin: 1%;
   width: 21%;
   height: 400px;
   position: relative;
