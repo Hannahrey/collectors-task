@@ -20,22 +20,51 @@
 
 	<div class="cocktails_box">
 			<div class="box1">
-						<div class="name">Mayden Academy Logo</div>
-						<p>Take a look</p>
+						<h2>Mojito</h2>
+						<ul>
+							<li>Alcohol Base: Rum </li>
+							<li>Taste Profile: Refreshing</li>
+							<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
+							<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
+							<li>Strength: Medium</li>
+							<li>Served: Crushed ice</li>
+						</ul>
+				</div>
+				<div class="box1">
+						<h2>Mojito</h2>
+						<ul>
+							<li>Alcohol Base: Rum </li>
+							<li>Taste Profile: Refreshing</li>
+							<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
+							<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
+							<li>Strength: Medium</li>
+							<li>Served: Crushed ice</li>
+						</ul>
+				</div>
+				<div class="box1">
+						<h2>Mojito</h2>
+						<ul>
+							<li>Alcohol Base: Rum </li>
+							<li>Taste Profile: Refreshing</li>
+							<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
+							<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
+							<li>Strength: Medium</li>
+							<li>Served: Crushed ice</li>
+						</ul>
+				</div>
+				<div class="box1">
+						<h2>Mojito</h2>
+						<ul>
+							<li>Alcohol Base: Rum </li>
+							<li>Taste Profile: Refreshing</li>
+							<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
+							<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
+							<li>Strength: Medium</li>
+							<li>Served: Crushed ice</li>
+						</ul>
 				</div>
 
-				<div class="box1">
-						<div class="name">Mayden Academy Logo</div>
-						<p>Take a look</p>
-				</div>	
-				<div class="box1">
-						<div class="name">Mayden Academy Logo</div>
-						<p>Take a look</p>
-				</div>
-				<div class="box1">
-						<div class="name">Mayden Academy Logo</div>
-						<p>Take a look</p>
-				</div>
+				
 			</div>
 			
 	

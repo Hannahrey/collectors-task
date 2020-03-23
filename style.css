@@ -1,12 +1,30 @@
-h1 {
+h1, h2 {
     font-family: 'Mrs Sheppards', cursive;
     text-align: center;
     color: black;
+}
+
+h1 {
     font-size: 4.5rem;
 }
 
-p {
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p, li {
     font-family: 'Sen', sans-serif;
+}
+
+li {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 3px 0;
+}
+
+ul {
+    padding: 0 0 0 20px;
 }
 
 .container_top {
@@ -35,15 +53,13 @@ p {
 
 
   /* cocktails section- these 4 boxes sit next to each other */
-.box1,
-.box2,
-.box3,
-.box4 {
+.box1 {
   padding: 1%;
   margin: 0 1%;
   width: 21%;
   height: 350px;
   position: relative;
-  background-color: lightgray;
+  background-color: #eaeaea;
+  overflow: auto;
 }
 
