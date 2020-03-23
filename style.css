@@ -1,3 +1,49 @@
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mrs Sheppards', cursive;
+    text-align: center;
+    color: black;
+    font-size: 4.5rem;
 }
+
+p {
+    font-family: 'Sen', sans-serif;
+}
+
+.container_top {
+    height: 100px;
+    background-color: aquamarine;
+    width: 100%;
+    margin-bottom: 50px;
+  
+}
+
+/* container to set width of page content */
+.container_main {
+    margin: auto;
+    width: 80%;
+  }
+
+  /* cocktails section */
+
+.cocktails_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 150px 0;
+  }
+  
+
+
+  /* cocktails section- these 4 boxes sit next to each other */
+.box1,
+.box2,
+.box3,
+.box4 {
+  padding: 1%;
+  margin: 0 1%;
+  width: 21%;
+  height: 350px;
+  position: relative;
+  background-color: lightgray;
+}
+
