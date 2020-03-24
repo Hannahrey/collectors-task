@@ -16,76 +16,12 @@
 
 		<div class="container_main">
 			<div class="container_link">
+                <!-- Link goes to the "add cocktail" page -->
 			<a href="./add_item.php">Add new cocktail</a>
 			</div>
 
 			<div class="cocktails_box">
-				<div class="box1">
-					<h2>Mojito</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>	
-				</div>
-				<div class="box1">
-					<h2>Tequila Sunrise</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>
-				</div>
-				<div class="box1">
-					<h2>Mojito</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>
-				</div>
-				<div class="box1">
-					<h2>Mojito</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>
-				</div>
-				<div class="box1">
-					<h2>Mojito</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>
-				</div>
-				<div class="box1">
-					<h2>Mojito</h2>
-					<ul>
-						<li>Alcohol Base: Rum </li>
-						<li>Taste Profile: Refreshing</li>
-						<li>Ingredients: 4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.</li>
-						<li>Method: Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. </li>
-						<li>Strength: Medium</li>
-						<li>Served: Crushed ice</li>
-					</ul>
-				</div>
+
 
 						
 			</div>
@@ -99,11 +35,27 @@
 </html>
 
 <?php
+
+// Accessing DB from PHP
 $db = new PDO('mysql:host=db; dbname=cocktails', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $query=$db->prepare("SELECT* FROM `cocktails`;");
 $query->execute();
 $result = $query->fetchAll();
+
+//echoing results of db to website
+foreach ($result as $cocktail) {
+    echo '<div class="box1">';
+    echo '<h2>' . $cocktail['name'] . '</h2>';
+    echo '<ul><li> Alcohol Base: ' . $cocktail['alcohol_base'] . '</li>';
+    echo '<li> Taste Profile: ' . $cocktail['taste_profile'] . '</li>';
+    echo '<li> Ingredients: ' . $cocktail['ingredients'] . '</li>';
+    echo '<li> Method: ' . $cocktail['method'] . '</li>';
+    echo '<li> Strength: ' . $cocktail['strength'] . '</li>';
+    echo '<li> Served: ' . $cocktail['served'] . '</li></ul>';
+    echo '</div>';
+}
+
 
 
 ?>
