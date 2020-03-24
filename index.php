@@ -22,40 +22,32 @@
 
 			<div class="cocktails_box">
 
+                <?php
 
-						
-			</div>
-					
-		
-		
-		</div>
+                // Accessing DB from PHP
+                $db = new PDO('mysql:host=db; dbname=Cocktails', 'root', 'password');
+                $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+                $query=$db->prepare("SELECT* FROM `cocktails`;");
+                $query->execute();
+                $result = $query->fetchAll();
 
+                //echoing results of db to website
+                foreach ($result as $cocktail) {
+                    echo '<div class="box1">';
+                    echo '<h2>' . $cocktail['name'] . '</h2>';
+                    echo '<ul><li>' . $cocktail['alcohol_base'] . '</li>';
+                    echo '<li>' . $cocktail['taste_profile'] . '</li>';
+                    echo '<li>' . $cocktail['ingredients'] . '</li>';
+                    echo '<li>' . $cocktail['method'] . '</li>';
+                    echo '<li>' . $cocktail['strength'] . '</li>';
+                    echo '<li>' . $cocktail['served'] . '</li></ul>';
+                    echo '</div>';
+                }
 
-	</body>
+                ?>
+
+            </div>
+
+        </div>
+    </body>
 </html>
-
-<?php
-
-// Accessing DB from PHP
-$db = new PDO('mysql:host=db; dbname=cocktails', 'root', 'password');
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$query=$db->prepare("SELECT* FROM `cocktails`;");
-$query->execute();
-$result = $query->fetchAll();
-
-//echoing results of db to website
-foreach ($result as $cocktail) {
-    echo '<div class="box1">';
-    echo '<h2>' . $cocktail['name'] . '</h2>';
-    echo '<ul><li> Alcohol Base: ' . $cocktail['alcohol_base'] . '</li>';
-    echo '<li> Taste Profile: ' . $cocktail['taste_profile'] . '</li>';
-    echo '<li> Ingredients: ' . $cocktail['ingredients'] . '</li>';
-    echo '<li> Method: ' . $cocktail['method'] . '</li>';
-    echo '<li> Strength: ' . $cocktail['strength'] . '</li>';
-    echo '<li> Served: ' . $cocktail['served'] . '</li></ul>';
-    echo '</div>';
-}
-
-
-
-?>
