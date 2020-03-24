@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: Cocktails
-# Generation Time: 2020-03-24 13:34:13 +0000
+# Generation Time: 2020-03-24 16:44:17 +0000
 # ************************************************************
 
 
@@ -42,7 +42,8 @@ LOCK TABLES `cocktails` WRITE;
 
 INSERT INTO `cocktails` (`id`, `name`, `alcohol_base`, `taste_profile`, `ingredients`, `method`, `strength`, `served`)
 VALUES
-	(1,'mojito','rum','refreshing','4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.','Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. ','medium','over crushed ice');
+	(1,'Mojito','rum','refreshing','4 cl white rum, 3 cl fresh lime juice, 6 sprigs of mint, 2 teaspoons sugar (or 2 cl of sugar syrup), soda water.','Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish with sprig of mint leaves and lemon slice. Serve with straw. ','medium','over crushed ice'),
+	(2,'Tequila Sunrise','tequila','fruity','4.5 cl tequila, 9 cl orange juice, 1.5cl grenadine syrup.','Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve.','medium','poured over ice');
 
 /*!40000 ALTER TABLE `cocktails` ENABLE KEYS */;
 UNLOCK TABLES;
