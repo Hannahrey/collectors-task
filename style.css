@@ -11,6 +11,7 @@ h1, h2 {
 
 h1 {
     font-size: 4.5rem;
+    margin: 0;
 }
 
 h2 {
@@ -91,7 +92,9 @@ ul {
 /* add item page, the container holding the form section */
 .form_container {
     height: 400px;
-    width: 100%;
-    margin-bottom: 50px; 
+    width: 60%;
+    margin: 0 auto 50px auto;
+   
     text-align: center;
+    background-color: #eaeaea;
 }
