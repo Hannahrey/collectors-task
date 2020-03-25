@@ -24,6 +24,7 @@ class FunctionTest extends TestCase
 
         //input
         $input = [
+            [
             'name' => 'Mojito',
             'alcohol_base' => 'rum',
             'taste_profile' => 'refreshing',
@@ -31,6 +32,7 @@ class FunctionTest extends TestCase
             'method' => 'make etc',
             'strength' => 'medium',
             'served' => 'over crushed ice',
+            ],
         ];
 
         $case = outputCocktails($input);
@@ -43,21 +45,7 @@ class FunctionTest extends TestCase
 
         //input
 
-        $input = [
-            'name' => 'Mojito',
-            'alcohol_base' => 'rum',
-            'taste_profile' => 'refreshing',
-            'ingredients' => [
-                1 => 'rum',
-                2 => 'mint',
-                3 => 'lime',
-                4 => 'sugar',
-                5 => 'soda',
-            ],
-            'method' => 'make etc',
-            'strength' => 'medium',
-            'served' => 'over crushed ice',
-        ];
+        $input = 'Mojito';
 
         $this->expectException(TypeError::class); 
 
@@ -65,5 +53,5 @@ class FunctionTest extends TestCase
 
     }
 
-
 }
+

@@ -23,7 +23,13 @@
 			<div class="cocktails_box">
 
                 <?php
+				//linking to DB
+				require './getDB_function.php';
 
+				// to get the cocktails data from the db
+				require './getCocktails_function.php';
+				$result = getCocktails();
+				
                 //echoing results of db to website
 				require './outputCocktails_function.php';
 				$cocktail_details = outputCocktails($result);

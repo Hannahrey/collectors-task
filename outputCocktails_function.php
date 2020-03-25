@@ -8,7 +8,7 @@ function outputCocktails(array $result) : string {
 
     foreach ($result as $cocktail) {
         $cocktail_details .= '<div class="box1">';
-        $cocktail_details .=   '<h2>' . $cocktail['name'] .
+        $cocktail_details .= '<h2>' . $cocktail['name'] .
                 '</h2>';
         $cocktail_details .=  '<ul>' . 
                     '<li>' . $cocktail['alcohol_base'] .
