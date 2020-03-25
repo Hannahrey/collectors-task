@@ -3,7 +3,7 @@ body {
 }
 
 
-h1, h2 {
+h1, h2{
     font-family: 'Mrs Sheppards', cursive;
     text-align: center;
     color: black;
@@ -19,7 +19,7 @@ h2 {
     margin: 10px 0 20px 0;
 }
 
-p, li, a {
+p, li, a, label, select {
     font-family: 'Sen', sans-serif;
 }
 
@@ -91,10 +91,39 @@ ul {
 
 /* add item page, the container holding the form section */
 .form_container {
-    height: 400px;
+    height: 700px;
     width: 60%;
-    margin: 0 auto 50px auto;
-   
+    margin: 0 auto 100px auto;
+    box-sizing: border-box;
+    padding: 30px;
     text-align: center;
     background-color: #eaeaea;
+    
+
+}
+
+.one_field {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+} 
+
+input, textarea {
+    padding: 5px 10px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+  }
+
+  /* .one_field label {
+    margin: 8px 2px;
+    vertical-align: middle;
+
+}  */
+
+.label_text {
+    vertical-align: top;
+    position: relative;
+    top: 10px;
 }
