@@ -7,11 +7,9 @@
 </head>
 
 <body>
-<header>
+	<header>
 		<div class="container_top">
             <h1>Add another cocktail</h1>
-
-			</div>
 		</div>
     </header>
 
