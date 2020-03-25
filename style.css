@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+
+h1, h2 {
+    font-family: 'Mrs Sheppards', cursive;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 10px 0 20px 0;
+}
+
+p, li, a {
+    font-family: 'Sen', sans-serif;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 40px auto;
+    color: #000000;
+}
+
+/* for any anchor tags, when hover over: */
+a:hover {
+    border-bottom: 1px solid #000000;
+  }
+
+li {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 3px 0;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+/* top container with title in */
+.container_top {
+    height: 100px;
+    background-color: aquamarine;
+    width: 100%;
+    margin-bottom: 50px; 
+}
+
+/* anchor tag section container */
+.container_link {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* container to set width of page content */
+.container_main {
+    margin: auto;
+    width: 80%;
+  }
+
+  /* home page - cocktails section */
+
+.cocktails_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px 0 150px 0;
+  }
+  
+
+/* cocktails section- these 4 boxes sit next to each other */
+.box1 {
+  padding: 1%;
+  margin: 1%;
+  width: 21%;
+  height: 400px;
+  position: relative;
+  background-color: #eaeaea;
+  overflow: auto;
+}
+
+
+/* add item page, the container holding the form section */
+.form_container {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px; 
+    text-align: center;
+}
