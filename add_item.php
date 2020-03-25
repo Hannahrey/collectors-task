@@ -33,10 +33,17 @@
 			<textarea id="method" name="method" rows="8" cols="20"></textarea><br>
 			<label for "strength">Strength of drink: </label>
 			<select id="strength" name="strength" size="1">
-				<option value="bitter">Strong</option>
-				<option value="sweet">Medium</option>
-				<option value="fruity">Weak</option>
-				<option value="refreshing">Non-Alcoholic</option>
+				<option value="strong">Strong</option>
+				<option value="medium">Medium</option>
+				<option value="weak">Weak</option>
+				<option value="non_alcoholic">Non-Alcoholic</option>
+			</select><br>
+			<label for "served">Served: </label>
+			<select id="served" name="served" size="1">
+				<option value="on_rocks">Poured over ice</option>
+				<option value="frozen">Frozen</option>
+				<option value="fruity">Over crushed ice</option>
+				<option value="refreshing">Straight up</option>
 			</select><br>
 			
 
