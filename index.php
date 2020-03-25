@@ -1,3 +1,14 @@
+<?php
+//linking to DB
+require './getDB_function.php';
+
+
+require './getCocktails_function.php';
+
+
+require './outputCocktails_function.php';
+?>
+
 <html lang="en-GB">
 	<head>
 		<title>Cocktails</title>
@@ -23,35 +34,13 @@
 			<div class="cocktails_box">
 
                 <?php
+				// to get the cocktails data from the db
+				$result = getCocktails();
 
-                // Accessing DB from PHP
-                require_once './getDB_function';
-                $db= getDb("db", "Cocktails", "root", "password");
-                $query=$db->prepare("SELECT `name`, `alcohol_base`, `taste_profile`, `ingredients`, `method`, `strength`, `served`  FROM `cocktails`;");
-                $query->execute();
-                $result = $query->fetchAll();
+				//echoing results of db to website
+				$cocktail_details = outputCocktails($result);
+				echo outputCocktails($result);
 
-                //echoing results of db to website
-                foreach ($result as $cocktail) {
-                    echo '<div class="box1">';
-                    echo    '<h2>' . $cocktail['name'] .
-                            '</h2>';
-                    echo    '<ul>
-                                <li>' . $cocktail['alcohol_base'] .
-                                '</li>';
-                    echo        '<li>' . $cocktail['taste_profile'] .
-                                '</li>';
-                    echo        '<li>' . $cocktail['ingredients'] .
-                                '</li>';
-                    echo        '<li>' . $cocktail['method'] .
-                                '</li>';
-                    echo        '<li>' . $cocktail['strength'] .
-                                '</li>';
-                    echo        '<li>' . $cocktail['served'] .
-                                '</li>
-                            </ul>';
-                    echo '</div>';
-                }
 
                 ?>
 
