@@ -1,4 +1,5 @@
 <?php
+
 function tasteProfileCorrect() : bool{
-    return $taste_profile == 'bitter'|| $taste_profile == 'sweet'|| $taste_profile == 'refreshing'|| $taste_profile == 'fruity'|| $taste_profile == 'sour';
+    return $_POST['taste_profile'] == 'bitter'|| $_POST['taste_profile'] == 'sweet'|| $_POST['taste_profile'] == 'refreshing'|| $_POST['taste_profile'] == 'fruity'|| $_POST['taste_profile'] == 'sour';
 }

@@ -111,12 +111,14 @@ ul {
     margin: 10px auto;
 } 
 
-input, textarea {
+.form_container input, .form_container textarea {
     padding: 5px 10px;
     margin: 8px 2px;
     box-sizing: border-box;
     border: none;
     border-radius: 1px;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
   }
 
 .label_text {

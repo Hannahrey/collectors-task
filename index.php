@@ -35,7 +35,7 @@ require './outputCocktails_function.php';
 
                 <?php
 				// to get the cocktails data from the db
-				$result = getCocktails();
+				$result = getCocktails($db);
 
 				//echoing results of db to website
 				$cocktail_details = outputCocktails($result);

@@ -1,4 +1,4 @@
 <?php
 function strengthCorrect() : bool{
-    return $strength == 'strong'|| $strength == 'medium'|| $strength == 'weak'|| $strength == 'non_alcoholic';
+    return $_POST['strength'] == 'strong'|| $_POST['strength'] == 'medium'|| $_POST['strength'] == 'weak'|| $_POST['strength'] == 'non_alcoholic';
 }

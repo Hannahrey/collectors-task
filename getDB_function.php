@@ -17,3 +17,4 @@ function getDb(string $servername, string $dbname, string $username, string $pas
     return $db;
 };
 
+$db= getDb("db", "Cocktails", "root", "password");
