@@ -23,7 +23,7 @@ require './send_data.php';
     </header>
 
     <div class="form_container">
-		<form method="post" action="./add_item.php">
+		<form method="post">
 			<div class="one_field">
 				<label for="name">Cocktail Name: </label>
 				<input type="text" id="name" name="name" required/>
