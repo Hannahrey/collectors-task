@@ -1,3 +1,12 @@
+<?php
+//linking to DB
+require './getDB_function.php';
+
+//sending form data to DB
+require './send_data.php';
+
+?>
+
 <html lang="en-GB">
 <head>
 	<title>Cocktails</title>
@@ -14,7 +23,7 @@
     </header>
 
     <div class="form_container">
-		<form method="post">
+		<form method="post" action="./add_item.php">
 			<div class="one_field">
 				<label for="name">Cocktail Name: </label>
 				<input type="text" id="name" name="name" required/>
@@ -60,7 +69,7 @@
 				</select>
 			</div>
 			<div class="one_field">
-				<input class="button" type="submit" value="Submit"/>
+				<input class="button" type="submit" value="Submit" name="submit"/>
 			</div>
 		</form>
 	</div>
@@ -71,4 +80,3 @@
 
 </body>
 </html>
-
