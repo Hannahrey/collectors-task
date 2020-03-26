@@ -16,15 +16,15 @@
     <div class="form_container">
 		<form method="post">
 			<div class="one_field">
-				<label for "name">Cocktail Name: </label>
+				<label for="name">Cocktail Name: </label>
 				<input type="text" id="name" name="name" required/>
-			
+			</div>
 			<div class="one_field">
-				<label for "alcohol_base">Alcohol Base: </label>
+				<label for="alcohol_base">Alcohol Base: </label>
 				<input type="text" id="alcohol_base" name="alcohol_base" required/>
 			</div>
 			<div class="one_field">
-				<label for "taste_profile">Taste Profile: </label>
+				<label for="taste_profile">Taste Profile: </label>
 				<select id="taste_profile" name="taste_profile" size="1">
 					<option value="bitter">Bitter</option>
 					<option value="sweet">Sweet</option>
@@ -34,15 +34,15 @@
 				</select>
 			</div>
 			<div class="one_field">
-				<label class="label_text" for "ingredients">Ingredients: </label>
+				<label class="label_text" for="ingredients">Ingredients: </label>
 				<textarea id="ingredients" name="ingredients" rows="5" cols="20"></textarea>
 			</div>
 			<div class="one_field">
-				<label class="label_text" "method">Method: </label>
+				<label class="label_text" for="method">Method: </label>
 				<textarea id="method" name="method" rows="8" cols="20"></textarea>
 			</div>
 			<div class="one_field">
-				<label for "strength">Strength of drink: </label>
+				<label for="strength">Strength of drink: </label>
 				<select id="strength" name="strength" size="1">
 					<option value="strong">Strong</option>
 					<option value="medium">Medium</option>
@@ -51,7 +51,7 @@
 				</select>
 			</div>
 			<div class="one_field">
-				<label for "served">Served: </label>
+				<label for="served">Served: </label>
 				<select id="served" name="served" size="1">
 					<option value="on_rocks">Poured over ice</option>
 					<option value="frozen">Frozen</option>
@@ -60,25 +60,15 @@
 				</select>
 			</div>
 			<div class="one_field">
-			<input type="submit" value="Submit"/>
+			<input class="button" type="submit" value="Submit"/>
 			</div>
 		</form>
 	</div>
-</div>
-<div class="container_link">
-		<a href="./index.php">Back</a>
-    </div>
 
- 
-        
+	<div class="container_link">
+		<a href="./index.php">Back</a>
+	</div>
+
 </body>
 </html>
 
-
-<!-- <form method="post">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required/><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required/><br>
-    <input type="submit"/>
-    </form> -->
