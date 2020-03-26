@@ -64,8 +64,8 @@ require './send_data.php';
 				<select id="served" name="served" size="1">
 					<option value="on_rocks">Poured over ice</option>
 					<option value="frozen">Frozen</option>
-					<option value="fruity">Over crushed ice</option>
-					<option value="refreshing">Straight up</option>
+					<option value="over_crushed_ice">Over crushed ice</option>
+					<option value="straight_up">Straight up</option>
 				</select>
 			</div>
 			<div class="one_field">

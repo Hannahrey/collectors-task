@@ -55,3 +55,23 @@ class FunctionTest extends TestCase
 
 }
 
+require '../tasteProfileCorrect_function.php';
+use PHPUnit\Framework\TestCase;
+
+class FunctionTest extends TestCase
+{
+    //success test
+    public function testSuccessTasteProfileCorrect() {
+
+        //expected result of test
+       $expected = 
+
+        //input
+        $input = 'fruity';
+
+
+        $case = outputCocktails($input);
+        $this->assertEquals($expected, $case);
+    }
+
+}
