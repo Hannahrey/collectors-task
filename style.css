@@ -3,7 +3,7 @@ body {
 }
 
 
-h1, h2 {
+h1, h2{
     font-family: 'Mrs Sheppards', cursive;
     text-align: center;
     color: black;
@@ -11,6 +11,8 @@ h1, h2 {
 
 h1 {
     font-size: 4.5rem;
+    margin: 0;
+    padding: 20px 0;
 }
 
 h2 {
@@ -18,7 +20,7 @@ h2 {
     margin: 10px 0 20px 0;
 }
 
-p, li, a {
+p, li, a, label {
     font-family: 'Sen', sans-serif;
 }
 
@@ -46,10 +48,11 @@ ul {
 
 /* top container with title in */
 .container_top {
-    height: 100px;
+    /*height: 180px;*/
     background-color: aquamarine;
     width: 100%;
     margin-bottom: 50px; 
+    overflow: auto;
 }
 
 /* anchor tag section container */
@@ -67,7 +70,6 @@ ul {
   }
 
   /* home page - cocktails section */
-
 .cocktails_box {
     display: flex;
     flex-wrap: wrap;
@@ -85,13 +87,52 @@ ul {
   position: relative;
   background-color: #eaeaea;
   overflow: auto;
+  min-width: 220px;
 }
 
 
 /* add item page, the container holding the form section */
 .form_container {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 50px; 
+    height: 750px;
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto 100px auto;
+    box-sizing: border-box;
+    padding: 30px;
     text-align: center;
+    background-color: #eaeaea;
+    
+
+}
+
+.one_field {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+} 
+
+.form_container input, .form_container textarea {
+    padding: 5px 10px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
+  }
+
+.label_text {
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+}
+
+
+.button {
+    font-family: 'Sen', sans-serif;
+    margin-top: 40px;
+    font-size: 2rem;
+    width: 150px;
+    height: 50px;
+    background-color: #b0b0b0;
 }
