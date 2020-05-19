@@ -11,17 +11,17 @@ function outputCocktails(array $result) : string {
         $cocktail_details .= '<h2>' . $cocktail['name'] .
                 '</h2>';
         $cocktail_details .=  '<ul>' . 
-                    '<li>' . $cocktail['alcohol_base'] .
+                    '<li> Alcohol base: ' . $cocktail['alcohol_base'] .
                     '</li>';
-        $cocktail_details .=     '<li>' . $cocktail['taste_profile'] .
+        $cocktail_details .=     '<li>Taste Profile: ' . $cocktail['taste_profile'] .
                     '</li>';
-        $cocktail_details .=  '<li>' . $cocktail['ingredients'] .
+        $cocktail_details .=  '<li>Ingredients: ' . $cocktail['ingredients'] .
                     '</li>';
-        $cocktail_details .=  '<li>' . $cocktail['method'] .
+        $cocktail_details .=  '<li>Method: ' . $cocktail['method'] .
                     '</li>';
-        $cocktail_details .=  '<li>' . $cocktail['strength'] .
+        $cocktail_details .=  '<li>Strength: ' . $cocktail['strength'] .
                     '</li>';
-        $cocktail_details .=   '<li>' . $cocktail['served'] .
+        $cocktail_details .=   '<li>Served: ' . $cocktail['served'] .
                     '</li>' .
                  '</ul>';
         $cocktail_details .=  '</div>';

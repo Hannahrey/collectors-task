@@ -35,4 +35,5 @@ if (isset($_POST['submit'])) {
     }else {
         echo "The test profile doesn't match a valid option.";
     }
+
 } 

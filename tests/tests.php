@@ -13,12 +13,12 @@ class FunctionTest extends TestCase
        '<div class="box1">' . 
             '<h2>Mojito</h2>' . 
                 '<ul>' . 
-                '<li>rum</li>' . 
-                '<li>refreshing</li>' . 
-                '<li>misc</li>' . 
-                '<li>make etc</li>' . 
-                '<li>medium</li>' . 
-                '<li>over crushed ice</li>' . 
+                '<li> Alcohol base: rum</li>' .
+                '<li>Taste Profile: refreshing</li>' .
+                '<li>Ingredients: misc</li>' .
+                '<li>Method: make etc</li>' .
+                '<li>Strength: medium</li>' .
+                '<li>Served: over crushed ice</li>' .
             '</ul>' . 
         '</div>';
 
